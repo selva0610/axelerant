@@ -1,0 +1,5 @@
+services:
+  apikey_siteinfo.route_axelerant:
+    class: 'Drupal\axelerant_assignment\Routing\AxelerantRoute'
+    tags:
+      - { name: event_subscriber }

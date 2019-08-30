@@ -1,0 +1,7 @@
+name: axelerant_assignment
+type: module
+description: Custom module to create axelerant assignment to extend site config settings and expose basic page content as json object.
+package: Custom
+
+version: '8.0'
+core: '8.x'

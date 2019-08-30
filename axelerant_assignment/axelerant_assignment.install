@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the axelerant_assignment module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function axelerant_assignment_uninstall() {
+  \Drupal::configFactory()->getEditable('axelerant_assignment.config')->delete();
+}

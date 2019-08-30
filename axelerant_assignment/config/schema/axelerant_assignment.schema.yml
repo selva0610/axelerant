@@ -1,0 +1,7 @@
+# Extending system schema to add extra field to store apikeys.
+
+alterinfo.site:
+  mapping:
+    siteapikey:
+      type: text
+      label: 'Site API Key'

@@ -1,0 +1,12 @@
+node.apijson:
+  path: '/page_json/{siteapikey}/{node}'
+  defaults:
+    _controller: '\Drupal\axelerant_assignment\Controller\BasicPageNodeController::content'
+  requirements:
+    _permission: 'access content'
+  options:
+      parameters:
+        siteapikey:
+          type: text
+        node:
+          type: entity:node
