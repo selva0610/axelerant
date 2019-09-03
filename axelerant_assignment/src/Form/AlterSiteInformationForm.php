@@ -56,5 +56,10 @@ class AlterSiteInformationForm extends SiteInformationForm {
 
     // To save existing value of form in parent form.
     parent::submitForm($form, $form_state);
+
+    // Success Message
+    if (!empty($form_state->getValue('site_api_key'))) {
+      drupal_set_message(t('Site API key has been updated with the value is ' . $form_state->getValue('site_api_key')));
+    }
   }
 }
